@@ -1,0 +1,482 @@
+{\rtf1\ansi\ansicpg1251\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue0;\red70\green137\blue204;
+\red140\green211\blue254;\red202\green202\blue202;\red109\green109\blue109;\red194\green126\blue101;\red109\green115\blue120;
+\red212\green212\blue212;\red113\green192\blue131;\red167\green197\blue152;\red183\green111\blue247;\red246\green124\blue48;
+\red54\green192\blue160;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\csgray\c0\c0;\cssrgb\c33725\c61176\c83922;
+\cssrgb\c61176\c86275\c99608;\cssrgb\c83137\c83137\c83137;\cssrgb\c50196\c50196\c50196;\cssrgb\c80784\c56863\c47059;\cssrgb\c50196\c52549\c54510;
+\cssrgb\c86275\c86275\c86275;\cssrgb\c50588\c78824\c58431;\cssrgb\c70980\c80784\c65882;\cssrgb\c77255\c54118\c97647;\cssrgb\c98039\c56471\c24314;
+\cssrgb\c23922\c78824\c69020;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 <!DOCTYPE\strokec5  html\strokec4 >\strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \strokec7 <\strokec4 html\strokec6  \strokec5 lang\strokec7 =\strokec8 "ru"\strokec7 >\strokec6 \
+\strokec7 <\strokec4 head\strokec7 >\strokec6 \
+    \strokec7 <\strokec4 meta\strokec6  \strokec5 charset\strokec7 =\strokec8 "UTF-8"\strokec7 >\strokec6 \
+    \strokec7 <\strokec4 meta\strokec6  \strokec5 name\strokec7 =\strokec8 "viewport"\strokec6  \strokec5 content\strokec7 =\strokec8 "width=device-width, initial-scale=1.0"\strokec7 >\strokec6 \
+    \strokec7 <\strokec4 title\strokec7 >\strokec6 \uc0\u1048 \u1085 \u1090 \u1077 \u1088 \u1072 \u1082 \u1090 \u1080 \u1074 \u1085 \u1099 \u1081  \u1041 \u1088 \u1077 \u1085 \u1076 \u1073 \u1091 \u1082  LISCAR\strokec7 </\strokec4 title\strokec7 >\strokec6 \
+    \strokec7 <\strokec4 script\strokec6  \strokec5 src\strokec7 =\strokec8 "https://cdn.tailwindcss.com"\strokec7 ></\strokec4 script\strokec7 >\strokec6 \
+    \strokec7 <\strokec4 script\strokec6  \strokec5 src\strokec7 =\strokec8 "https://cdn.jsdelivr.net/npm/chart.js"\strokec7 ></\strokec4 script\strokec7 >\strokec6 \
+    \strokec7 <\strokec4 link\strokec6  \strokec5 rel\strokec7 =\strokec8 "preconnect"\strokec6  \strokec5 href\strokec7 =\strokec8 "https://fonts.googleapis.com"\strokec7 >\strokec6 \
+    \strokec7 <\strokec4 link\strokec6  \strokec5 rel\strokec7 =\strokec8 "preconnect"\strokec6  \strokec5 href\strokec7 =\strokec8 "https://fonts.gstatic.com"\strokec6  \strokec5 crossorigin\strokec7 >\strokec6 \
+    \strokec7 <\strokec4 link\strokec6  \strokec5 href\strokec7 =\strokec8 "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"\strokec6  \strokec5 rel\strokec7 =\strokec8 "stylesheet"\strokec7 >\strokec6 \
+    \strokec9 <!--\strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \strokec9       Chosen Palette: LISCAR Palette (Vibrant Orange, Deep Grey, Light Cream)\strokec6 \
+\strokec9       Application Structure Plan: A single-page application designed as an interactive dashboard. The structure features a fixed side navigation on larger screens (which transforms to a top bar on mobile) allowing users to instantly jump between key sections of the brand strategy (Core, Audience, Visuals, etc.). This non-linear approach was chosen to transform the static report into a practical, easy-to-use tool for stakeholders, enabling quick reference and better adoption of brand standards. Key interactions include interactive charts for competitive analysis, clickable color palettes, and dynamic content displays. The LLM-powered generators have been removed as per user request.\strokec6 \
+\strokec9       Visualization & Content Choices:\strokec6 \
+\strokec9       - Brand Core (Values): Presented as interactive cards with a subtle hover effect to engage the user (Goal: Inform, Method: HTML/CSS).\strokec6 \
+\strokec9       - Competitive Analysis: A dynamic bar chart (Chart.js) visually compares LISCAR against competitors on key value propositions like transparency and service (Goal: Compare, Method: Chart.js/Canvas).\strokec6 \
+\strokec9       - Audience Motivation: A doughnut chart (Chart.js) visualizes the primary drivers of the target audience, making the data easily digestible (Goal: Inform, Method: Chart.js/Canvas).\strokec6 \
+\strokec9       - Visual Identity: An interactive section where users can click to copy color hex codes and see typography examples in action (Goal: Organize, Method: HTML/CSS/JS).\strokec6 \
+\strokec9       - Customer Experience: A process flow diagram built with styled HTML/Tailwind components to illustrate the customer journey (Goal: Organize, Method: HTML/CSS).\strokec6 \
+\strokec9       All choices support the application's goal of being a useful, interactive tool, avoiding static presentation methods.\strokec6 \
+\strokec9       CONFIRMATION: NO SVG graphics used. NO Mermaid JS used.\strokec6 \
+\strokec9     -->\strokec6 \
+    \strokec7 <\strokec4 style\strokec7 >\strokec6 \
+        \strokec4 body\strokec6  \strokec10 \{\strokec6 \
+            \strokec5 font-family:\strokec6  \strokec11 'Open Sans'\strokec10 ,\strokec6  \strokec8 sans-serif\strokec10 ;\strokec6 \
+            \strokec5 background-color:\strokec6  #1A1A1A\strokec10 ;\strokec6 \
+            \strokec5 color:\strokec6  #F0EAD6\strokec10 ;\strokec6 \
+        \strokec10 \}\strokec6 \
+        \strokec4 h1\strokec10 ,\strokec6  \strokec4 h2\strokec10 ,\strokec6  \strokec4 h3\strokec10 ,\strokec6  \strokec4 h4\strokec10 ,\strokec6  \strokec4 h5\strokec10 ,\strokec6  \strokec4 h6\strokec6  \strokec10 \{\strokec6 \
+            \strokec5 font-family:\strokec6  \strokec11 'Montserrat'\strokec10 ,\strokec6  \strokec8 sans-serif\strokec10 ;\strokec6 \
+        \strokec10 \}\strokec6 \
+        \strokec4 :root\strokec6  \strokec10 \{\strokec6 \
+            \strokec5 --liscar-orange:\strokec6  #FF6600\strokec10 ;\strokec6 \
+            \strokec5 --liscar-dark:\strokec6  #1A1A1A\strokec10 ;\strokec6 \
+            \strokec5 --liscar-light:\strokec6  #F0EAD6\strokec10 ;\strokec6 \
+            \strokec5 --liscar-grey:\strokec6  #CCCCCC\strokec10 ;\strokec6 \
+        \strokec10 \}\strokec6 \
+        \strokec4 .bg-liscar-orange\strokec6  \strokec10 \{\strokec6  \strokec5 background-color:\strokec6  \strokec8 var(--liscar-orange)\strokec10 ;\strokec6  \strokec10 \}\strokec6 \
+        \strokec4 .bg-liscar-dark\strokec6  \strokec10 \{\strokec6  \strokec5 background-color:\strokec6  \strokec8 var(--liscar-dark)\strokec10 ;\strokec6  \strokec10 \}\strokec6 \
+        \strokec4 .bg-liscar-light\strokec6  \strokec10 \{\strokec6  \strokec5 background-color:\strokec6  \strokec8 var(--liscar-light)\strokec10 ;\strokec6  \strokec10 \}\strokec6 \
+        \strokec4 .text-liscar-orange\strokec6  \strokec10 \{\strokec6  \strokec5 color:\strokec6  \strokec8 var(--liscar-orange)\strokec10 ;\strokec6  \strokec10 \}\strokec6 \
+        \strokec4 .text-liscar-light\strokec6  \strokec10 \{\strokec6  \strokec5 color:\strokec6  \strokec8 var(--liscar-light)\strokec10 ;\strokec6  \strokec10 \}\strokec6 \
+        \strokec4 .border-liscar-orange\strokec6  \strokec10 \{\strokec6  \strokec5 border-color:\strokec6  \strokec8 var(--liscar-orange)\strokec10 ;\strokec6  \strokec10 \}\strokec6 \
+        \strokec4 .nav-link\strokec6  \strokec10 \{\strokec6 \
+            \strokec5 transition:\strokec6  \strokec8 all\strokec6  \strokec12 0.3s\strokec6  \strokec8 ease\strokec10 ;\strokec6 \
+            \strokec5 border-left:\strokec6  \strokec12 4px\strokec6  \strokec8 solid\strokec6  \strokec8 transparent\strokec10 ;\strokec6 \
+        \strokec10 \}\strokec6 \
+        \strokec4 .nav-link.active\strokec6  \strokec10 \{\strokec6 \
+            \strokec5 background-color:\strokec6  \strokec8 rgba(\strokec12 255\strokec10 ,\strokec6  \strokec12 102\strokec10 ,\strokec6  \strokec12 0\strokec10 ,\strokec6  \strokec12 0.1\strokec8 )\strokec10 ;\strokec6 \
+            \strokec5 border-left-color:\strokec6  \strokec8 var(--liscar-orange)\strokec10 ;\strokec6 \
+            \strokec5 color:\strokec6  \strokec8 var(--liscar-orange)\strokec10 ;\strokec6 \
+        \strokec10 \}\strokec6 \
+        \strokec4 .nav-link:hover\strokec6  \strokec10 \{\strokec6 \
+            \strokec5 background-color:\strokec6  \strokec8 rgba(\strokec12 255\strokec10 ,\strokec6  \strokec12 102\strokec10 ,\strokec6  \strokec12 0\strokec10 ,\strokec6  \strokec12 0.05\strokec8 )\strokec10 ;\strokec6 \
+            \strokec5 color:\strokec6  \strokec8 white\strokec10 ;\strokec6 \
+        \strokec10 \}\strokec6 \
+        \strokec4 .content-section\strokec6  \strokec10 \{\strokec6 \
+            \strokec5 display:\strokec6  \strokec8 none\strokec10 ;\strokec6 \
+        \strokec10 \}\strokec6 \
+        \strokec4 .content-section.active\strokec6  \strokec10 \{\strokec6 \
+            \strokec5 display:\strokec6  \strokec8 block\strokec10 ;\strokec6 \
+        \strokec10 \}\strokec6 \
+        \strokec4 .chart-container\strokec6  \strokec10 \{\strokec6 \
+            \strokec5 position:\strokec6  \strokec8 relative\strokec10 ;\strokec6 \
+            \strokec5 width:\strokec6  \strokec12 100%\strokec10 ;\strokec6 \
+            \strokec5 max-width:\strokec6  \strokec12 600px\strokec10 ;\strokec6 \
+            \strokec5 margin-left:\strokec6  \strokec8 auto\strokec10 ;\strokec6 \
+            \strokec5 margin-right:\strokec6  \strokec8 auto\strokec10 ;\strokec6 \
+            \strokec5 height:\strokec6  \strokec12 350px\strokec10 ;\strokec6 \
+            \strokec5 max-height:\strokec6  \strokec12 400px\strokec10 ;\strokec6 \
+        \strokec10 \}\strokec6 \
+        \strokec4 .value-card\strokec6  \strokec10 \{\strokec6 \
+            \strokec5 transition:\strokec6  \strokec8 transform\strokec6  \strokec12 0.3s\strokec6  \strokec8 ease\strokec10 ,\strokec6  \strokec8 box-shadow\strokec6  \strokec12 0.3s\strokec6  \strokec8 ease\strokec10 ;\strokec6 \
+        \strokec10 \}\strokec6 \
+        \strokec4 .value-card:hover\strokec6  \strokec10 \{\strokec6 \
+            \strokec5 transform:\strokec6  \strokec8 translateY(\strokec12 -5px\strokec8 )\strokec10 ;\strokec6 \
+            \strokec5 box-shadow:\strokec6  \strokec12 0\strokec6  \strokec12 10px\strokec6  \strokec12 20px\strokec6  \strokec8 rgba(\strokec12 0\strokec10 ,\strokec12 0\strokec10 ,\strokec12 0\strokec10 ,\strokec12 0.4\strokec8 )\strokec10 ;\strokec6 \
+        \strokec10 \}\strokec6 \
+    \strokec7 </\strokec4 style\strokec7 >\strokec6 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \strokec7 </\strokec4 head\strokec7 >\strokec6 \
+\strokec7 <\strokec4 body\strokec6  \strokec5 class\strokec7 =\strokec8 "bg-liscar-dark"\strokec7 >\strokec6 \
+\
+    \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "flex flex-col lg:flex-row min-h-screen"\strokec7 >\strokec6 \
+        \strokec9 <!-- Navigation -->\strokec6 \
+        \strokec7 <\strokec4 aside\strokec6  \strokec5 class\strokec7 =\strokec8 "w-full lg:w-64 bg-black/30 lg:fixed lg:h-full p-4"\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "flex flex-col items-center mb-8"\strokec7 >\strokec6 \
+                 \strokec9 <!-- The provided logo should be placed here. Using a placeholder as per guidelines. -->\strokec6 \
+                 \strokec7 <\strokec4 img\strokec6  \strokec5 src\strokec7 =\strokec8 "https://i.ibb.co/L5k6H1d/photo-2025-07-15-16-49-02.jpg"\strokec6  \strokec5 alt\strokec7 =\strokec8 "\uc0\u1051 \u1086 \u1075 \u1086 \u1090 \u1080 \u1087  LISCAR"\strokec6  \strokec5 class\strokec7 =\strokec8 "w-24 h-24 object-contain mb-2"\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 h1\strokec6  \strokec5 class\strokec7 =\strokec8 "text-2xl font-bold text-white"\strokec7 >\strokec6 LISCAR\strokec7 </\strokec4 h1\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "text-sm text-liscar-orange"\strokec7 >\strokec6 \uc0\u1048 \u1085 \u1090 \u1077 \u1088 \u1072 \u1082 \u1090 \u1080 \u1074 \u1085 \u1099 \u1081  \u1041 \u1088 \u1077 \u1085 \u1076 \u1073 \u1091 \u1082 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+            \strokec7 <\strokec4 nav\strokec6  \strokec5 id\strokec7 =\strokec8 "main-nav"\strokec6  \strokec5 class\strokec7 =\strokec8 "flex flex-row lg:flex-col flex-wrap justify-center lg:justify-start gap-2"\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "#core"\strokec6  \strokec5 class\strokec7 =\strokec8 "nav-link active text-lg font-semibold p-4 rounded-lg w-full"\strokec7 >\strokec6 \uc0\u55357 \u56960  \u1071 \u1076 \u1088 \u1086  \u1041 \u1088 \u1077 \u1085 \u1076 \u1072 \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "#audience"\strokec6  \strokec5 class\strokec7 =\strokec8 "nav-link text-lg font-semibold p-4 rounded-lg w-full"\strokec7 >\strokec6 \uc0\u55357 \u56421  \u1040 \u1091 \u1076 \u1080 \u1090 \u1086 \u1088 \u1080 \u1103 \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "#positioning"\strokec6  \strokec5 class\strokec7 =\strokec8 "nav-link text-lg font-semibold p-4 rounded-lg w-full"\strokec7 >\strokec6 \uc0\u55356 \u57263  \u1055 \u1086 \u1079 \u1080 \u1094 \u1080 \u1086 \u1085 \u1080 \u1088 \u1086 \u1074 \u1072 \u1085 \u1080 \u1077 \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "#visuals"\strokec6  \strokec5 class\strokec7 =\strokec8 "nav-link text-lg font-semibold p-4 rounded-lg w-full"\strokec7 >\strokec6 \uc0\u55356 \u57256  \u1042 \u1080 \u1079 \u1091 \u1072 \u1083 \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "#messaging"\strokec6  \strokec5 class\strokec7 =\strokec8 "nav-link text-lg font-semibold p-4 rounded-lg w-full"\strokec7 >\strokec6 \uc0\u55357 \u56492  \u1057 \u1086 \u1086 \u1073 \u1097 \u1077 \u1085 \u1080 \u1103 \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 a\strokec6  \strokec5 href\strokec7 =\strokec8 "#strategy"\strokec6  \strokec5 class\strokec7 =\strokec8 "nav-link text-lg font-semibold p-4 rounded-lg w-full"\strokec7 >\strokec6 \uc0\u55358 \u56813  \u1057 \u1090 \u1088 \u1072 \u1090 \u1077 \u1075 \u1080 \u1103 \strokec7 </\strokec4 a\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 nav\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 aside\strokec7 >\strokec6 \
+\
+        \strokec9 <!-- Main Content -->\strokec6 \
+        \strokec7 <\strokec4 main\strokec6  \strokec5 class\strokec7 =\strokec8 "lg:ml-64 flex-1 p-4 sm:p-8 md:p-12"\strokec7 >\strokec6 \
+            \
+            \strokec9 <!-- Section: Core -->\strokec6 \
+            \strokec7 <\strokec4 section\strokec6  \strokec5 id\strokec7 =\strokec8 "core"\strokec6  \strokec5 class\strokec7 =\strokec8 "content-section active"\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 h2\strokec6  \strokec5 class\strokec7 =\strokec8 "text-4xl font-bold text-liscar-orange mb-8 border-b-2 border-liscar-orange/30 pb-4"\strokec7 >\strokec6 \uc0\u1071 \u1076 \u1088 \u1086  \u1041 \u1088 \u1077 \u1085 \u1076 \u1072 \strokec7 </\strokec4 h2\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "space-y-8"\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 div\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 h3\strokec6  \strokec5 class\strokec7 =\strokec8 "text-2xl font-semibold mb-2"\strokec7 >\strokec6 \uc0\u1052 \u1080 \u1089 \u1089 \u1080 \u1103 \strokec7 </\strokec4 h3\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "text-lg text-liscar-light/90"\strokec7 >\strokec6 LISCAR \'97 \uc0\u1074 \u1072 \u1096  \u1085 \u1072 \u1076 \u1077 \u1078 \u1085 \u1099 \u1081  \u1087 \u1088 \u1086 \u1074 \u1086 \u1076 \u1085 \u1080 \u1082  \u1074  \u1084 \u1080 \u1088  \u1082 \u1072 \u1095 \u1077 \u1089 \u1090 \u1074 \u1077 \u1085 \u1085 \u1099 \u1093  \u1072 \u1074 \u1090 \u1086 \u1084 \u1086 \u1073 \u1080 \u1083 \u1077 \u1081  \u1080 \u1079 -\u1079 \u1072  \u1088 \u1091 \u1073 \u1077 \u1078 \u1072 . \u1052 \u1099  \u1076 \u1077 \u1083 \u1072 \u1077 \u1084  \u1080 \u1084 \u1087 \u1086 \u1088 \u1090  \u1072 \u1074 \u1090 \u1086  \u1087 \u1088 \u1086 \u1089 \u1090 \u1099 \u1084 , \u1087 \u1088 \u1086 \u1079 \u1088 \u1072 \u1095 \u1085 \u1099 \u1084  \u1080  \u1076 \u1086 \u1089 \u1090 \u1091 \u1087 \u1085 \u1099 \u1084 , \u1086 \u1090 \u1082 \u1088 \u1099 \u1074 \u1072 \u1103  \u1076 \u1083 \u1103  \u1082 \u1072 \u1078 \u1076 \u1086 \u1075 \u1086  \u1074 \u1086 \u1079 \u1084 \u1086 \u1078 \u1085 \u1086 \u1089 \u1090 \u1100  \u1074 \u1083 \u1072 \u1076 \u1077 \u1090 \u1100  \u1072 \u1074 \u1090 \u1086 \u1084 \u1086 \u1073 \u1080 \u1083 \u1077 \u1084  \u1084 \u1077 \u1095 \u1090 \u1099 , \u1089 \u1086 \u1086 \u1090 \u1074 \u1077 \u1090 \u1089 \u1090 \u1074 \u1091 \u1102 \u1097 \u1080 \u1084  \u1084 \u1080 \u1088 \u1086 \u1074 \u1099 \u1084  \u1089 \u1090 \u1072 \u1085 \u1076 \u1072 \u1088 \u1090 \u1072 \u1084 . \u1052 \u1099  \u1074 \u1086 \u1087 \u1083 \u1086 \u1097 \u1072 \u1077 \u1084  \u1089 \u1074 \u1086 \u1073 \u1086 \u1076 \u1091  \u1074 \u1099 \u1073 \u1086 \u1088 \u1072  \u1080  \u1091 \u1074 \u1077 \u1088 \u1077 \u1085 \u1085 \u1086 \u1089 \u1090 \u1100  \u1085 \u1072  \u1076 \u1086 \u1088 \u1086 \u1075 \u1077 .\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                    \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 div\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 h3\strokec6  \strokec5 class\strokec7 =\strokec8 "text-2xl font-semibold mb-2"\strokec7 >\strokec6 \uc0\u1042 \u1080 \u1076 \u1077 \u1085 \u1080 \u1077 \strokec7 </\strokec4 h3\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "text-lg text-liscar-light/90"\strokec7 >\strokec6 \uc0\u1057 \u1090 \u1072 \u1090 \u1100  \u1074 \u1077 \u1076 \u1091 \u1097 \u1077 \u1081  \u1080  \u1085 \u1072 \u1080 \u1073 \u1086 \u1083 \u1077 \u1077  \u1076 \u1086 \u1074 \u1077 \u1088 \u1077 \u1085 \u1085 \u1086 \u1081  \u1082 \u1086 \u1084 \u1087 \u1072 \u1085 \u1080 \u1077 \u1081  \u1085 \u1072  \u1088 \u1099 \u1085 \u1082 \u1077  \u1080 \u1084 \u1087 \u1086 \u1088 \u1090 \u1072  \u1072 \u1074 \u1090 \u1086 \u1084 \u1086 \u1073 \u1080 \u1083 \u1077 \u1081  \u1074  \u1056 \u1060 , \u1080 \u1079 \u1074 \u1077 \u1089 \u1090 \u1085 \u1086 \u1081  \u1089 \u1074 \u1086 \u1080 \u1084  \u1073 \u1077 \u1079 \u1091 \u1087 \u1088 \u1077 \u1095 \u1085 \u1099 \u1084  \u1089 \u1077 \u1088 \u1074 \u1080 \u1089 \u1086 \u1084 , \u1080 \u1085 \u1085 \u1086 \u1074 \u1072 \u1094 \u1080 \u1086 \u1085 \u1085 \u1099 \u1084 \u1080  \u1088 \u1077 \u1096 \u1077 \u1085 \u1080 \u1103 \u1084 \u1080  \u1080  \u1096 \u1080 \u1088 \u1086 \u1082 \u1080 \u1084  \u1074 \u1099 \u1073 \u1086 \u1088 \u1086 \u1084  \u1074 \u1099 \u1089 \u1086 \u1082 \u1086 \u1082 \u1072 \u1095 \u1077 \u1089 \u1090 \u1074 \u1077 \u1085 \u1085 \u1099 \u1093  \u1072 \u1074 \u1090 \u1086  \u1080 \u1079  \u1083 \u1102 \u1073 \u1086 \u1081  \u1090 \u1086 \u1095 \u1082 \u1080  \u1084 \u1080 \u1088 \u1072 , \u1089 \u1080 \u1084 \u1074 \u1086 \u1083 \u1080 \u1079 \u1080 \u1088 \u1091 \u1103  \u1089 \u1086 \u1073 \u1086 \u1081  \u1089 \u1082 \u1086 \u1088 \u1086 \u1089 \u1090 \u1100 , \u1075 \u1080 \u1073 \u1082 \u1086 \u1089 \u1090 \u1100  \u1080  \u1085 \u1072 \u1076 \u1077 \u1078 \u1085 \u1086 \u1089 \u1090 \u1100 .\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                    \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 div\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 h3\strokec6  \strokec5 class\strokec7 =\strokec8 "text-2xl font-semibold mb-4"\strokec7 >\strokec6 \uc0\u1062 \u1077 \u1085 \u1085 \u1086 \u1089 \u1090 \u1080 \strokec7 </\strokec4 h3\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "value-card bg-black/20 p-6 rounded-xl border border-white/10"\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 h4\strokec6  \strokec5 class\strokec7 =\strokec8 "text-xl font-bold text-liscar-orange mb-2"\strokec7 >\strokec6 \uc0\u1053 \u1072 \u1076 \u1077 \u1078 \u1085 \u1086 \u1089 \u1090 \u1100 \strokec7 </\strokec4 h4\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 p\strokec7 >\strokec6 \uc0\u1052 \u1099  \u1089 \u1090 \u1088 \u1086 \u1080 \u1084  \u1076 \u1086 \u1083 \u1075 \u1086 \u1089 \u1088 \u1086 \u1095 \u1085 \u1099 \u1077  \u1086 \u1090 \u1085 \u1086 \u1096 \u1077 \u1085 \u1080 \u1103  \u1085 \u1072  \u1076 \u1086 \u1074 \u1077 \u1088 \u1080 \u1080  \u1080  \u1074 \u1099 \u1087 \u1086 \u1083 \u1085 \u1103 \u1077 \u1084  \u1089 \u1074 \u1086 \u1080  \u1086 \u1073 \u1077 \u1097 \u1072 \u1085 \u1080 \u1103 .\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                            \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "value-card bg-black/20 p-6 rounded-xl border border-white/10"\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 h4\strokec6  \strokec5 class\strokec7 =\strokec8 "text-xl font-bold text-liscar-orange mb-2"\strokec7 >\strokec6 \uc0\u1055 \u1088 \u1086 \u1079 \u1088 \u1072 \u1095 \u1085 \u1086 \u1089 \u1090 \u1100 \strokec7 </\strokec4 h4\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 p\strokec7 >\strokec6 \uc0\u1042 \u1089 \u1077  \u1101 \u1090 \u1072 \u1087 \u1099  \u1087 \u1088 \u1086 \u1094 \u1077 \u1089 \u1089 \u1072  \u1080 \u1084 \u1087 \u1086 \u1088 \u1090 \u1072  \u1082 \u1088 \u1080 \u1089 \u1090 \u1072 \u1083 \u1100 \u1085 \u1086  \u1103 \u1089 \u1085 \u1099  \u1080  \u1087 \u1086 \u1085 \u1103 \u1090 \u1085 \u1099  \u1076 \u1083 \u1103  \u1082 \u1083 \u1080 \u1077 \u1085 \u1090 \u1072 .\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                            \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "value-card bg-black/20 p-6 rounded-xl border border-white/10"\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 h4\strokec6  \strokec5 class\strokec7 =\strokec8 "text-xl font-bold text-liscar-orange mb-2"\strokec7 >\strokec6 \uc0\u1050 \u1083 \u1080 \u1077 \u1085 \u1090 \u1086 \u1086 \u1088 \u1080 \u1077 \u1085 \u1090 \u1080 \u1088 \u1086 \u1074 \u1072 \u1085 \u1085 \u1086 \u1089 \u1090 \u1100 \strokec7 </\strokec4 h4\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 p\strokec7 >\strokec6 \uc0\u1055 \u1086 \u1090 \u1088 \u1077 \u1073 \u1085 \u1086 \u1089 \u1090 \u1080  \u1082 \u1083 \u1080 \u1077 \u1085 \u1090 \u1072  \'97 \u1085 \u1072 \u1096  \u1075 \u1083 \u1072 \u1074 \u1085 \u1099 \u1081  \u1087 \u1088 \u1080 \u1086 \u1088 \u1080 \u1090 \u1077 \u1090 . \u1052 \u1099  \u1089 \u1090 \u1088 \u1077 \u1084 \u1080 \u1084 \u1089 \u1103  \u1087 \u1088 \u1077 \u1074 \u1079 \u1086 \u1081 \u1090 \u1080  \u1086 \u1078 \u1080 \u1076 \u1072 \u1085 \u1080 \u1103 .\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                            \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "value-card bg-black/20 p-6 rounded-xl border border-white/10"\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 h4\strokec6  \strokec5 class\strokec7 =\strokec8 "text-xl font-bold text-liscar-orange mb-2"\strokec7 >\strokec6 \uc0\u1069 \u1082 \u1089 \u1087 \u1077 \u1088 \u1090 \u1080 \u1079 \u1072 \strokec7 </\strokec4 h4\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 p\strokec7 >\strokec6 \uc0\u1043 \u1083 \u1091 \u1073 \u1086 \u1082 \u1080 \u1077  \u1079 \u1085 \u1072 \u1085 \u1080 \u1103  \u1088 \u1099 \u1085 \u1082 \u1072  \u1080  \u1087 \u1088 \u1086 \u1094 \u1077 \u1089 \u1089 \u1086 \u1074  \u1080 \u1084 \u1087 \u1086 \u1088 \u1090 \u1072  \u1087 \u1086 \u1079 \u1074 \u1086 \u1083 \u1103 \u1102 \u1090  \u1085 \u1072 \u1084  \u1087 \u1088 \u1077 \u1076 \u1083 \u1072 \u1075 \u1072 \u1090 \u1100  \u1083 \u1091 \u1095 \u1096 \u1080 \u1077  \u1088 \u1077 \u1096 \u1077 \u1085 \u1080 \u1103 .\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                            \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "value-card bg-black/20 p-6 rounded-xl border border-white/10"\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 h4\strokec6  \strokec5 class\strokec7 =\strokec8 "text-xl font-bold text-liscar-orange mb-2"\strokec7 >\strokec6 \uc0\u1043 \u1080 \u1073 \u1082 \u1086 \u1089 \u1090 \u1100 \strokec7 </\strokec4 h4\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 p\strokec7 >\strokec6 \uc0\u1041 \u1099 \u1089 \u1090 \u1088 \u1086  \u1072 \u1076 \u1072 \u1087 \u1090 \u1080 \u1088 \u1091 \u1077 \u1084 \u1089 \u1103  \u1082  \u1084 \u1077 \u1085 \u1103 \u1102 \u1097 \u1080 \u1084 \u1089 \u1103  \u1091 \u1089 \u1083 \u1086 \u1074 \u1080 \u1103 \u1084  \u1088 \u1099 \u1085 \u1082 \u1072  \u1080  \u1087 \u1086 \u1090 \u1088 \u1077 \u1073 \u1085 \u1086 \u1089 \u1090 \u1103 \u1084  \u1082 \u1083 \u1080 \u1077 \u1085 \u1090 \u1086 \u1074 .\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                            \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "value-card bg-black/20 p-6 rounded-xl border border-white/10"\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 h4\strokec6  \strokec5 class\strokec7 =\strokec8 "text-xl font-bold text-liscar-orange mb-2"\strokec7 >\strokec6 \uc0\u1054 \u1090 \u1074 \u1077 \u1090 \u1089 \u1090 \u1074 \u1077 \u1085 \u1085 \u1086 \u1089 \u1090 \u1100 \strokec7 </\strokec4 h4\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 p\strokec7 >\strokec6 \uc0\u1052 \u1099  \u1085 \u1077 \u1089 \u1077 \u1084  \u1087 \u1086 \u1083 \u1085 \u1091 \u1102  \u1086 \u1090 \u1074 \u1077 \u1090 \u1089 \u1090 \u1074 \u1077 \u1085 \u1085 \u1086 \u1089 \u1090 \u1100  \u1079 \u1072  \u1082 \u1072 \u1078 \u1076 \u1099 \u1081  \u1101 \u1090 \u1072 \u1087  \u1089 \u1076 \u1077 \u1083 \u1082 \u1080 .\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                            \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                    \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+            \strokec9 <!-- Section: Audience -->\strokec6 \
+            \strokec7 <\strokec4 section\strokec6  \strokec5 id\strokec7 =\strokec8 "audience"\strokec6  \strokec5 class\strokec7 =\strokec8 "content-section"\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 h2\strokec6  \strokec5 class\strokec7 =\strokec8 "text-4xl font-bold text-liscar-orange mb-8 border-b-2 border-liscar-orange/30 pb-4"\strokec7 >\strokec6 \uc0\u1062 \u1077 \u1083 \u1077 \u1074 \u1072 \u1103  \u1040 \u1091 \u1076 \u1080 \u1090 \u1086 \u1088 \u1080 \u1103 \strokec7 </\strokec4 h2\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "text-lg mb-8 text-liscar-light/90"\strokec7 >\strokec6 \uc0\u1055 \u1086 \u1085 \u1080 \u1084 \u1072 \u1085 \u1080 \u1077  \u1085 \u1072 \u1096 \u1077 \u1075 \u1086  \u1082 \u1083 \u1080 \u1077 \u1085 \u1090 \u1072  \'97 \u1082 \u1083 \u1102 \u1095  \u1082  \u1091 \u1089 \u1087 \u1077 \u1093 \u1091 . \u1052 \u1099  \u1086 \u1088 \u1080 \u1077 \u1085 \u1090 \u1080 \u1088 \u1091 \u1077 \u1084 \u1089 \u1103  \u1085 \u1072  \u1083 \u1102 \u1076 \u1077 \u1081 , \u1082 \u1086 \u1090 \u1086 \u1088 \u1099 \u1077  \u1094 \u1077 \u1085 \u1103 \u1090  \u1082 \u1072 \u1095 \u1077 \u1089 \u1090 \u1074 \u1086 , \u1085 \u1072 \u1076 \u1077 \u1078 \u1085 \u1086 \u1089 \u1090 \u1100  \u1080  \u1080 \u1085 \u1076 \u1080 \u1074 \u1080 \u1076 \u1091 \u1072 \u1083 \u1100 \u1085 \u1086 \u1089 \u1090 \u1100 , \u1080  \u1087 \u1086 \u1084 \u1086 \u1075 \u1072 \u1077 \u1084  \u1080 \u1084  \u1087 \u1088 \u1077 \u1086 \u1076 \u1086 \u1083 \u1077 \u1090 \u1100  \u1074 \u1089 \u1077  \u1073 \u1072 \u1088 \u1100 \u1077 \u1088 \u1099  \u1085 \u1072  \u1087 \u1091 \u1090 \u1080  \u1082  \u1072 \u1074 \u1090 \u1086 \u1084 \u1086 \u1073 \u1080 \u1083 \u1102  \u1084 \u1077 \u1095 \u1090 \u1099 .\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "grid grid-cols-1 lg:grid-cols-2 gap-8"\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "bg-black/20 p-6 rounded-xl"\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 h3\strokec6  \strokec5 class\strokec7 =\strokec8 "text-2xl font-semibold mb-4"\strokec7 >\strokec6 \uc0\u1044 \u1077 \u1084 \u1086 \u1075 \u1088 \u1072 \u1092 \u1080 \u1103 \strokec7 </\strokec4 h3\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 ul\strokec6  \strokec5 class\strokec7 =\strokec8 "space-y-2 list-disc list-inside text-lg"\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 li\strokec7 ><\strokec4 span\strokec6  \strokec5 class\strokec7 =\strokec8 "font-bold"\strokec7 >\strokec6 \uc0\u1042 \u1086 \u1079 \u1088 \u1072 \u1089 \u1090 :\strokec7 </\strokec4 span\strokec7 >\strokec6  28-55 \uc0\u1083 \u1077 \u1090 \strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 li\strokec7 ><\strokec4 span\strokec6  \strokec5 class\strokec7 =\strokec8 "font-bold"\strokec7 >\strokec6 \uc0\u1044 \u1086 \u1093 \u1086 \u1076 :\strokec7 </\strokec4 span\strokec7 >\strokec6  \uc0\u1057 \u1088 \u1077 \u1076 \u1085 \u1080 \u1081  \u1080  \u1074 \u1099 \u1096 \u1077  \u1089 \u1088 \u1077 \u1076 \u1085 \u1077 \u1075 \u1086 \strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 li\strokec7 ><\strokec4 span\strokec6  \strokec5 class\strokec7 =\strokec8 "font-bold"\strokec7 >\strokec6 \uc0\u1043 \u1077 \u1086 \u1075 \u1088 \u1072 \u1092 \u1080 \u1103 :\strokec7 </\strokec4 span\strokec7 >\strokec6  \uc0\u1050 \u1088 \u1091 \u1087 \u1085 \u1099 \u1077  \u1075 \u1086 \u1088 \u1086 \u1076 \u1072  \u1056 \u1060 \strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 li\strokec7 ><\strokec4 span\strokec6  \strokec5 class\strokec7 =\strokec8 "font-bold"\strokec7 >\strokec6 \uc0\u1055 \u1088 \u1086 \u1092 \u1077 \u1089 \u1089 \u1080 \u1103 :\strokec7 </\strokec4 span\strokec7 >\strokec6  \uc0\u1055 \u1088 \u1077 \u1076 \u1087 \u1088 \u1080 \u1085 \u1080 \u1084 \u1072 \u1090 \u1077 \u1083 \u1080 , \u1088 \u1091 \u1082 \u1086 \u1074 \u1086 \u1076 \u1080 \u1090 \u1077 \u1083 \u1080 , \u1089 \u1087 \u1077 \u1094 \u1080 \u1072 \u1083 \u1080 \u1089 \u1090 \u1099 \strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                        \strokec7 </\strokec4 ul\strokec7 >\strokec6 \
+                    \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "bg-black/20 p-6 rounded-xl"\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 h3\strokec6  \strokec5 class\strokec7 =\strokec8 "text-2xl font-semibold mb-4"\strokec7 >\strokec6 \uc0\u1055 \u1089 \u1080 \u1093 \u1086 \u1075 \u1088 \u1072 \u1092 \u1080 \u1103 : "\u1041 \u1086 \u1083 \u1080 " \u1080  \u1056 \u1077 \u1096 \u1077 \u1085 \u1080 \u1103 \strokec7 </\strokec4 h3\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 ul\strokec6  \strokec5 class\strokec7 =\strokec8 "space-y-3 text-lg"\strokec7 >\strokec6 \
+                           \strokec7 <\strokec4 li\strokec7 ><\strokec4 strong\strokec6  \strokec5 class\strokec7 =\strokec8 "text-red-400"\strokec7 >\strokec6 \uc0\u1041 \u1086 \u1083 \u1100 :\strokec7 </\strokec4 strong\strokec7 >\strokec6  \uc0\u1041 \u1086 \u1103 \u1079 \u1085 \u1100  \u1084 \u1086 \u1096 \u1077 \u1085 \u1085 \u1080 \u1095 \u1077 \u1089 \u1090 \u1074 \u1072  \u1080  "\u1082 \u1086 \u1090 \u1072  \u1074  \u1084 \u1077 \u1096 \u1082 \u1077 ". \strokec7 <\strokec4 br\strokec7 >\strokec6  \strokec7 <\strokec4 strong\strokec6  \strokec5 class\strokec7 =\strokec8 "text-liscar-orange"\strokec7 >\strokec6 \uc0\u1056 \u1077 \u1096 \u1077 \u1085 \u1080 \u1077  LISCAR:\strokec7 </\strokec4 strong\strokec7 >\strokec6  \uc0\u1055 \u1086 \u1083 \u1085 \u1072 \u1103  \u1102 \u1088 \u1080 \u1076 \u1080 \u1095 \u1077 \u1089 \u1082 \u1072 \u1103  \u1080  \u1090 \u1077 \u1093 \u1085 \u1080 \u1095 \u1077 \u1089 \u1082 \u1072 \u1103  \u1087 \u1088 \u1086 \u1074 \u1077 \u1088 \u1082 \u1072  \u1089  \u1075 \u1072 \u1088 \u1072 \u1085 \u1090 \u1080 \u1077 \u1081 .\strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                           \strokec7 <\strokec4 li\strokec7 ><\strokec4 strong\strokec6  \strokec5 class\strokec7 =\strokec8 "text-red-400"\strokec7 >\strokec6 \uc0\u1041 \u1086 \u1083 \u1100 :\strokec7 </\strokec4 strong\strokec7 >\strokec6  \uc0\u1057 \u1083 \u1086 \u1078 \u1085 \u1086 \u1089 \u1090 \u1080  \u1089  \u1076 \u1086 \u1082 \u1091 \u1084 \u1077 \u1085 \u1090 \u1072 \u1084 \u1080  \u1080  \u1090 \u1072 \u1084 \u1086 \u1078 \u1085 \u1077 \u1081 . \strokec7 <\strokec4 br\strokec7 >\strokec6  \strokec7 <\strokec4 strong\strokec6  \strokec5 class\strokec7 =\strokec8 "text-liscar-orange"\strokec7 >\strokec6 \uc0\u1056 \u1077 \u1096 \u1077 \u1085 \u1080 \u1077  LISCAR:\strokec7 </\strokec4 strong\strokec7 >\strokec6  \uc0\u1041 \u1077 \u1088 \u1077 \u1084  \u1074 \u1077 \u1089 \u1100  \u1087 \u1088 \u1086 \u1094 \u1077 \u1089 \u1089  "\u1087 \u1086 \u1076  \u1082 \u1083 \u1102 \u1095 ", \u1076 \u1077 \u1083 \u1072 \u1103  \u1077 \u1075 \u1086  \u1073 \u1077 \u1089 \u1096 \u1086 \u1074 \u1085 \u1099 \u1084  \u1076 \u1083 \u1103  \u1082 \u1083 \u1080 \u1077 \u1085 \u1090 \u1072 .\strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                           \strokec7 <\strokec4 li\strokec7 ><\strokec4 strong\strokec6  \strokec5 class\strokec7 =\strokec8 "text-red-400"\strokec7 >\strokec6 \uc0\u1041 \u1086 \u1083 \u1100 :\strokec7 </\strokec4 strong\strokec7 >\strokec6  \uc0\u1054 \u1090 \u1089 \u1091 \u1090 \u1089 \u1090 \u1074 \u1080 \u1077  \u1087 \u1088 \u1086 \u1079 \u1088 \u1072 \u1095 \u1085 \u1086 \u1089 \u1090 \u1080  \u1074  \u1094 \u1077 \u1085 \u1072 \u1093  \u1080  \u1089 \u1088 \u1086 \u1082 \u1072 \u1093 . \strokec7 <\strokec4 br\strokec7 >\strokec6  \strokec7 <\strokec4 strong\strokec6  \strokec5 class\strokec7 =\strokec8 "text-liscar-orange"\strokec7 >\strokec6 \uc0\u1056 \u1077 \u1096 \u1077 \u1085 \u1080 \u1077  LISCAR:\strokec7 </\strokec4 strong\strokec7 >\strokec6  \uc0\u1044 \u1077 \u1090 \u1072 \u1083 \u1100 \u1085 \u1072 \u1103  \u1086 \u1090 \u1095 \u1077 \u1090 \u1085 \u1086 \u1089 \u1090 \u1100  \u1080  \u1086 \u1073 \u1085 \u1086 \u1074 \u1083 \u1077 \u1085 \u1080 \u1103  \u1089 \u1090 \u1072 \u1090 \u1091 \u1089 \u1072  \u1085 \u1072  \u1082 \u1072 \u1078 \u1076 \u1086 \u1084  \u1101 \u1090 \u1072 \u1087 \u1077 .\strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                        \strokec7 </\strokec4 ul\strokec7 >\strokec6 \
+                    \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                 \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "mt-12"\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 h3\strokec6  \strokec5 class\strokec7 =\strokec8 "text-2xl font-semibold text-center mb-4"\strokec7 >\strokec6 \uc0\u1050 \u1083 \u1102 \u1095 \u1077 \u1074 \u1099 \u1077  \u1052 \u1086 \u1090 \u1080 \u1074 \u1072 \u1094 \u1080 \u1080  \u1040 \u1091 \u1076 \u1080 \u1090 \u1086 \u1088 \u1080 \u1080 \strokec7 </\strokec4 h3\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "chart-container"\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 canvas\strokec6  \strokec5 id\strokec7 =\strokec8 "audienceChart"\strokec7 ></\strokec4 canvas\strokec7 >\strokec6 \
+                    \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+            \strokec9 <!-- Section: Positioning -->\strokec6 \
+            \strokec7 <\strokec4 section\strokec6  \strokec5 id\strokec7 =\strokec8 "positioning"\strokec6  \strokec5 class\strokec7 =\strokec8 "content-section"\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 h2\strokec6  \strokec5 class\strokec7 =\strokec8 "text-4xl font-bold text-liscar-orange mb-8 border-b-2 border-liscar-orange/30 pb-4"\strokec7 >\strokec6 \uc0\u1055 \u1086 \u1079 \u1080 \u1094 \u1080 \u1086 \u1085 \u1080 \u1088 \u1086 \u1074 \u1072 \u1085 \u1080 \u1077 \strokec7 </\strokec4 h2\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "text-xl mb-8 text-center text-liscar-light/90"\strokec7 >\strokec6 \uc0\u1052 \u1099  \'97 \u1085 \u1077  \u1087 \u1088 \u1086 \u1089 \u1090 \u1086  \u1087 \u1086 \u1089 \u1088 \u1077 \u1076 \u1085 \u1080 \u1082 \u1080 . LISCAR \u1087 \u1086 \u1079 \u1080 \u1094 \u1080 \u1086 \u1085 \u1080 \u1088 \u1091 \u1077 \u1090 \u1089 \u1103  \u1082 \u1072 \u1082  \strokec7 <\strokec4 strong\strokec6  \strokec5 class\strokec7 =\strokec8 "text-white"\strokec7 >\strokec6 \uc0\u1101 \u1082 \u1089 \u1087 \u1077 \u1088 \u1090  \u1080  \u1085 \u1072 \u1076 \u1077 \u1078 \u1085 \u1099 \u1081  \u1087 \u1072 \u1088 \u1090 \u1085 \u1077 \u1088 \strokec7 </\strokec4 strong\strokec7 >\strokec6  \uc0\u1074  \u1084 \u1077 \u1078 \u1076 \u1091 \u1085 \u1072 \u1088 \u1086 \u1076 \u1085 \u1086 \u1084  \u1080 \u1084 \u1087 \u1086 \u1088 \u1090 \u1077  \u1072 \u1074 \u1090 \u1086 \u1084 \u1086 \u1073 \u1080 \u1083 \u1077 \u1081 , \u1076 \u1077 \u1081 \u1089 \u1090 \u1074 \u1091 \u1102 \u1097 \u1080 \u1081  \strokec7 <\strokec4 strong\strokec6  \strokec5 class\strokec7 =\strokec8 "text-white"\strokec7 >\strokec6 \uc0\u1091 \u1084 \u1085 \u1086  \u1080  \u1087 \u1088 \u1086 \u1074 \u1086 \u1088 \u1085 \u1086 , \u1082 \u1072 \u1082  \u1083 \u1080 \u1089 \u1072 \strokec7 </\strokec4 strong\strokec7 >\strokec6 , \uc0\u1095 \u1090 \u1086 \u1073 \u1099  \u1089 \u1085 \u1103 \u1090 \u1100  \u1074 \u1089 \u1077  \u1089 \u1083 \u1086 \u1078 \u1085 \u1086 \u1089 \u1090 \u1080  \u1080  \u1088 \u1080 \u1089 \u1082 \u1080  \u1089  \u1082 \u1083 \u1080 \u1077 \u1085 \u1090 \u1072 .\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 div\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 h3\strokec6  \strokec5 class\strokec7 =\strokec8 "text-2xl font-semibold text-center mb-4"\strokec7 >\strokec6 \uc0\u1053 \u1072 \u1096 \u1080  \u1055 \u1088 \u1077 \u1080 \u1084 \u1091 \u1097 \u1077 \u1089 \u1090 \u1074 \u1072 \strokec7 </\strokec4 h3\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "chart-container"\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 canvas\strokec6  \strokec5 id\strokec7 =\strokec8 "positioningChart"\strokec7 ></\strokec4 canvas\strokec7 >\strokec6 \
+                    \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+            \strokec9 <!-- Section: Visuals -->\strokec6 \
+            \strokec7 <\strokec4 section\strokec6  \strokec5 id\strokec7 =\strokec8 "visuals"\strokec6  \strokec5 class\strokec7 =\strokec8 "content-section"\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 h2\strokec6  \strokec5 class\strokec7 =\strokec8 "text-4xl font-bold text-liscar-orange mb-8 border-b-2 border-liscar-orange/30 pb-4"\strokec7 >\strokec6 \uc0\u1042 \u1080 \u1079 \u1091 \u1072 \u1083 \u1100 \u1085 \u1072 \u1103  \u1048 \u1076 \u1077 \u1085 \u1090 \u1080 \u1095 \u1085 \u1086 \u1089 \u1090 \u1100 \strokec7 </\strokec4 h2\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "text-lg mb-8 text-liscar-light/90"\strokec7 >\strokec6 \uc0\u1053 \u1072 \u1096  \u1074 \u1080 \u1079 \u1091 \u1072 \u1083 \u1100 \u1085 \u1099 \u1081  \u1089 \u1090 \u1080 \u1083 \u1100  \u1086 \u1090 \u1088 \u1072 \u1078 \u1072 \u1077 \u1090  \u1085 \u1072 \u1096 \u1091  \u1089 \u1091 \u1097 \u1085 \u1086 \u1089 \u1090 \u1100 : \u1076 \u1080 \u1085 \u1072 \u1084 \u1080 \u1095 \u1085 \u1099 \u1081 , \u1085 \u1072 \u1076 \u1077 \u1078 \u1085 \u1099 \u1081  \u1080  \u1089 \u1086 \u1074 \u1088 \u1077 \u1084 \u1077 \u1085 \u1085 \u1099 \u1081 . \u1042  \u1094 \u1077 \u1085 \u1090 \u1088 \u1077  \'97 \u1086 \u1073 \u1088 \u1072 \u1079  \u1083 \u1080 \u1089 \u1099 , \u1089 \u1080 \u1084 \u1074 \u1086 \u1083 \u1080 \u1079 \u1080 \u1088 \u1091 \u1102 \u1097 \u1077 \u1081  \u1091 \u1084  \u1080  \u1075 \u1080 \u1073 \u1082 \u1086 \u1089 \u1090 \u1100 , \u1080  \u1085 \u1072 \u1096 \u1072  \u1092 \u1080 \u1088 \u1084 \u1077 \u1085 \u1085 \u1072 \u1103  \u1087 \u1072 \u1083 \u1080 \u1090 \u1088 \u1072 , \u1089 \u1086 \u1079 \u1076 \u1072 \u1102 \u1097 \u1072 \u1103  \u1086 \u1097 \u1091 \u1097 \u1077 \u1085 \u1080 \u1077  \u1101 \u1085 \u1077 \u1088 \u1075 \u1080 \u1080  \u1080  \u1087 \u1088 \u1077 \u1084 \u1080 \u1072 \u1083 \u1100 \u1085 \u1086 \u1089 \u1090 \u1080 .\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "space-y-12"\strokec7 >\strokec6 \
+                    \strokec9 <!-- Color Palette -->\strokec6 \
+                    \strokec7 <\strokec4 div\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 h3\strokec6  \strokec5 class\strokec7 =\strokec8 "text-2xl font-semibold mb-4"\strokec7 >\strokec6 \uc0\u1062 \u1074 \u1077 \u1090 \u1086 \u1074 \u1072 \u1103  \u1087 \u1072 \u1083 \u1080 \u1090 \u1088 \u1072 \strokec7 </\strokec4 h3\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 text-center"\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "rounded-lg p-4 cursor-pointer"\strokec6  \strokec5 style\strokec7 =\strokec8 "background-color: var(--liscar-orange);"\strokec6  \strokec5 data-color\strokec7 =\strokec8 "#FF6600"\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "font-bold text-black text-lg"\strokec7 >\strokec6 LISCAR Orange\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "text-black"\strokec7 >\strokec6 #FF6600\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                            \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "rounded-lg p-4 cursor-pointer"\strokec6  \strokec5 style\strokec7 =\strokec8 "background-color: var(--liscar-dark);"\strokec6  \strokec5 data-color\strokec7 =\strokec8 "#1A1A1A"\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "font-bold text-white text-lg"\strokec7 >\strokec6 LISCAR Dark\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "text-white"\strokec7 >\strokec6 #1A1A1A\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                            \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "rounded-lg p-4 cursor-pointer"\strokec6  \strokec5 style\strokec7 =\strokec8 "background-color: var(--liscar-light);"\strokec6  \strokec5 data-color\strokec7 =\strokec8 "#F0EAD6"\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "font-bold text-black text-lg"\strokec7 >\strokec6 LISCAR Light\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "text-black"\strokec7 >\strokec6 #F0EAD6\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                            \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                             \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "rounded-lg p-4 cursor-pointer"\strokec6  \strokec5 style\strokec7 =\strokec8 "background-color: var(--liscar-grey);"\strokec6  \strokec5 data-color\strokec7 =\strokec8 "#CCCCCC"\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "font-bold text-black text-lg"\strokec7 >\strokec6 LISCAR Grey\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "text-black"\strokec7 >\strokec6 #CCCCCC\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                            \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 p\strokec6  \strokec5 id\strokec7 =\strokec8 "copy-message"\strokec6  \strokec5 class\strokec7 =\strokec8 "text-center mt-2 text-liscar-orange opacity-0 transition-opacity"\strokec7 >\strokec6 \uc0\u1057 \u1082 \u1086 \u1087 \u1080 \u1088 \u1086 \u1074 \u1072 \u1085 \u1086 !\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                    \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                    \strokec9 <!-- Typography -->\strokec6 \
+                    \strokec7 <\strokec4 div\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 h3\strokec6  \strokec5 class\strokec7 =\strokec8 "text-2xl font-semibold mb-4"\strokec7 >\strokec6 \uc0\u1058 \u1080 \u1087 \u1086 \u1075 \u1088 \u1072 \u1092 \u1080 \u1082 \u1072 \strokec7 </\strokec4 h3\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "grid grid-cols-1 md:grid-cols-2 gap-8"\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "bg-black/20 p-6 rounded-xl"\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "text-lg text-liscar-light/70"\strokec7 >\strokec6 \uc0\u1047 \u1072 \u1075 \u1086 \u1083 \u1086 \u1074 \u1082 \u1080 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "text-4xl font-bold"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-family: 'Montserrat', sans-serif;"\strokec7 >\strokec6 Montserrat Bold\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "text-sm text-liscar-light/70 mt-2"\strokec7 >\strokec6 \uc0\u1057 \u1086 \u1074 \u1088 \u1077 \u1084 \u1077 \u1085 \u1085 \u1099 \u1081 , \u1095 \u1080 \u1089 \u1090 \u1099 \u1081 , \u1076 \u1080 \u1085 \u1072 \u1084 \u1080 \u1095 \u1085 \u1099 \u1081 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                            \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                             \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "bg-black/20 p-6 rounded-xl"\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "text-lg text-liscar-light/70"\strokec7 >\strokec6 \uc0\u1054 \u1089 \u1085 \u1086 \u1074 \u1085 \u1086 \u1081  \u1090 \u1077 \u1082 \u1089 \u1090 \strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                                \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "text-xl"\strokec6  \strokec5 style\strokec7 =\strokec8 "font-family: 'Open Sans', sans-serif;"\strokec7 >\strokec6 Open Sans Regular \'97 \uc0\u1083 \u1077 \u1075 \u1082 \u1086  \u1095 \u1080 \u1090 \u1072 \u1077 \u1084 \u1099 \u1081 , \u1087 \u1088 \u1086 \u1092 \u1077 \u1089 \u1089 \u1080 \u1086 \u1085 \u1072 \u1083 \u1100 \u1085 \u1099 \u1081  \u1096 \u1088 \u1080 \u1092 \u1090  \u1076 \u1083 \u1103  \u1073 \u1086 \u1083 \u1100 \u1096 \u1080 \u1093  \u1086 \u1073 \u1098 \u1077 \u1084 \u1086 \u1074  \u1090 \u1077 \u1082 \u1089 \u1090 \u1072 .\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                            \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                    \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                     \strokec9 <!-- Imagery -->\strokec6 \
+                    \strokec7 <\strokec4 div\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 h3\strokec6  \strokec5 class\strokec7 =\strokec8 "text-2xl font-semibold mb-4"\strokec7 >\strokec6 \uc0\u1057 \u1090 \u1080 \u1083 \u1100  \u1080 \u1079 \u1086 \u1073 \u1088 \u1072 \u1078 \u1077 \u1085 \u1080 \u1081 \strokec7 </\strokec4 h3\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "text-lg mb-4 text-liscar-light/90"\strokec7 >\strokec6 \uc0\u1052 \u1099  \u1080 \u1089 \u1087 \u1086 \u1083 \u1100 \u1079 \u1091 \u1077 \u1084  \u1090 \u1086 \u1083 \u1100 \u1082 \u1086  \u1074 \u1099 \u1089 \u1086 \u1082 \u1086 \u1082 \u1072 \u1095 \u1077 \u1089 \u1090 \u1074 \u1077 \u1085 \u1085 \u1099 \u1077 , \u1087 \u1088 \u1086 \u1092 \u1077 \u1089 \u1089 \u1080 \u1086 \u1085 \u1072 \u1083 \u1100 \u1085 \u1099 \u1077  \u1092 \u1086 \u1090 \u1086 , \u1087 \u1077 \u1088 \u1077 \u1076 \u1072 \u1102 \u1097 \u1080 \u1077  \u1089 \u1074 \u1086 \u1073 \u1086 \u1076 \u1091 , \u1076 \u1080 \u1085 \u1072 \u1084 \u1080 \u1082 \u1091  \u1080  \u1085 \u1072 \u1076 \u1077 \u1078 \u1085 \u1086 \u1089 \u1090 \u1100 . \u1063 \u1080 \u1089 \u1090 \u1099 \u1077  \u1083 \u1080 \u1085 \u1080 \u1080 , \u1077 \u1089 \u1090 \u1077 \u1089 \u1090 \u1074 \u1077 \u1085 \u1085 \u1086 \u1077  \u1086 \u1089 \u1074 \u1077 \u1097 \u1077 \u1085 \u1080 \u1077  \u1080  \u1092 \u1086 \u1082 \u1091 \u1089  \u1085 \u1072  \u1072 \u1074 \u1090 \u1086 \u1084 \u1086 \u1073 \u1080 \u1083 \u1077  \u1080  \u1089 \u1095 \u1072 \u1089 \u1090 \u1083 \u1080 \u1074 \u1099 \u1093  \u1074 \u1083 \u1072 \u1076 \u1077 \u1083 \u1100 \u1094 \u1072 \u1093 .\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "grid grid-cols-1 sm:grid-cols-3 gap-4"\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 img\strokec6  \strokec5 src\strokec7 =\strokec8 "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"\strokec6  \strokec5 alt\strokec7 =\strokec8 "\uc0\u1055 \u1088 \u1080 \u1084 \u1077 \u1088  \u1080 \u1079 \u1086 \u1073 \u1088 \u1072 \u1078 \u1077 \u1085 \u1080 \u1103  1"\strokec6  \strokec5 class\strokec7 =\strokec8 "rounded-lg object-cover h-48 w-full"\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 img\strokec6  \strokec5 src\strokec7 =\strokec8 "https://images.unsplash.com/photo-1542362567-b07e54358753?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"\strokec6  \strokec5 alt\strokec7 =\strokec8 "\uc0\u1055 \u1088 \u1080 \u1084 \u1077 \u1088  \u1080 \u1079 \u1086 \u1073 \u1088 \u1072 \u1078 \u1077 \u1085 \u1080 \u1103  2"\strokec6  \strokec5 class\strokec7 =\strokec8 "rounded-lg object-cover h-48 w-full"\strokec7 >\strokec6 \
+                            \strokec7 <\strokec4 img\strokec6  \strokec5 src\strokec7 =\strokec8 "https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"\strokec6  \strokec5 alt\strokec7 =\strokec8 "\uc0\u1055 \u1088 \u1080 \u1084 \u1077 \u1088  \u1080 \u1079 \u1086 \u1073 \u1088 \u1072 \u1078 \u1077 \u1085 \u1080 \u1103  3"\strokec6  \strokec5 class\strokec7 =\strokec8 "rounded-lg object-cover h-48 w-full"\strokec7 >\strokec6 \
+                        \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                    \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+\
+             \strokec9 <!-- Section: Messaging -->\strokec6 \
+            \strokec7 <\strokec4 section\strokec6  \strokec5 id\strokec7 =\strokec8 "messaging"\strokec6  \strokec5 class\strokec7 =\strokec8 "content-section"\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 h2\strokec6  \strokec5 class\strokec7 =\strokec8 "text-4xl font-bold text-liscar-orange mb-8 border-b-2 border-liscar-orange/30 pb-4"\strokec7 >\strokec6 \uc0\u1057 \u1086 \u1086 \u1073 \u1097 \u1077 \u1085 \u1080 \u1103  \u1041 \u1088 \u1077 \u1085 \u1076 \u1072 \strokec7 </\strokec4 h2\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "text-center bg-black/20 p-8 rounded-xl mb-12"\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 h3\strokec6  \strokec5 class\strokec7 =\strokec8 "text-xl font-semibold mb-2 text-liscar-light/80"\strokec7 >\strokec6 \uc0\u1054 \u1089 \u1085 \u1086 \u1074 \u1085 \u1086 \u1081  \u1089 \u1083 \u1086 \u1075 \u1072 \u1085 \strokec7 </\strokec4 h3\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "text-4xl font-bold text-white"\strokec7 >\strokec6 LISCAR: \uc0\u1042 \u1072 \u1096  \u1084 \u1080 \u1088  \u1072 \u1074 \u1090 \u1086 \u1084 \u1086 \u1073 \u1080 \u1083 \u1077 \u1081  \u1073 \u1077 \u1079  \u1075 \u1088 \u1072 \u1085 \u1080 \u1094 . \strokec7 <\strokec4 span\strokec6  \strokec5 class\strokec7 =\strokec8 "text-liscar-orange"\strokec7 >\strokec6 \uc0\u1059 \u1084 \u1085 \u1099 \u1081  \u1074 \u1099 \u1073 \u1086 \u1088 .\strokec7 </\strokec4 span\strokec7 ></\strokec4 p\strokec7 >\strokec6 \
+                \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                 \strokec7 <\strokec4 h3\strokec6  \strokec5 class\strokec7 =\strokec8 "text-2xl font-semibold mb-4"\strokec7 >\strokec6 \uc0\u1050 \u1083 \u1102 \u1095 \u1077 \u1074 \u1099 \u1077  \u1089 \u1086 \u1086 \u1073 \u1097 \u1077 \u1085 \u1080 \u1103 \strokec7 </\strokec4 h3\strokec7 >\strokec6 \
+                 \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "space-y-4 mb-12"\strokec7 >\strokec6 \
+                     \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "bg-black/20 p-5 rounded-lg text-lg"\strokec7 >\strokec6 "\uc0\u1047 \u1072 \u1073 \u1091 \u1076 \u1100 \u1090 \u1077  \u1086  \u1089 \u1083 \u1086 \u1078 \u1085 \u1086 \u1089 \u1090 \u1103 \u1093  \u1080 \u1084 \u1087 \u1086 \u1088 \u1090 \u1072 . LISCAR \u1073 \u1077 \u1088 \u1077 \u1090  \u1074 \u1089 \u1077  \u1085 \u1072  \u1089 \u1077 \u1073 \u1103 , \u1085 \u1072 \u1093 \u1086 \u1076 \u1103  \u1083 \u1091 \u1095 \u1096 \u1080 \u1077  \u1087 \u1091 \u1090 \u1080 ."\strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                     \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "bg-black/20 p-5 rounded-lg text-lg"\strokec7 >\strokec6 "\uc0\u1042 \u1099 \u1073 \u1080 \u1088 \u1072 \u1081 \u1090 \u1077  \u1080 \u1079  \u1090 \u1099 \u1089 \u1103 \u1095  \u1072 \u1074 \u1090 \u1086 \u1084 \u1086 \u1073 \u1080 \u1083 \u1077 \u1081  \u1087 \u1086  \u1074 \u1089 \u1077 \u1084 \u1091  \u1084 \u1080 \u1088 \u1091 . \u1052 \u1099  \u1076 \u1086 \u1089 \u1090 \u1072 \u1074 \u1080 \u1084  \u1077 \u1075 \u1086  \u1082  \u1074 \u1072 \u1084 , \u1080 \u1089 \u1087 \u1086 \u1083 \u1100 \u1079 \u1091 \u1103  \u1085 \u1072 \u1096 \u1091  \u1101 \u1082 \u1089 \u1087 \u1077 \u1088 \u1090 \u1080 \u1079 \u1091 ."\strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                     \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "bg-black/20 p-5 rounded-lg text-lg"\strokec7 >\strokec6 "\uc0\u1055 \u1086 \u1083 \u1085 \u1072 \u1103  \u1087 \u1088 \u1086 \u1079 \u1088 \u1072 \u1095 \u1085 \u1086 \u1089 \u1090 \u1100  \u1085 \u1072  \u1082 \u1072 \u1078 \u1076 \u1086 \u1084  \u1101 \u1090 \u1072 \u1087 \u1077 : \u1086 \u1090  \u1087 \u1086 \u1076 \u1073 \u1086 \u1088 \u1072  \u1076 \u1086  \u1082 \u1083 \u1102 \u1095 \u1077 \u1081  \u1074  \u1088 \u1091 \u1082 \u1072 \u1093 , \u1073 \u1077 \u1079  \u1089 \u1082 \u1088 \u1099 \u1090 \u1099 \u1093  \u1089 \u1102 \u1088 \u1087 \u1088 \u1080 \u1079 \u1086 \u1074 ."\strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                     \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "bg-black/20 p-5 rounded-lg text-lg"\strokec7 >\strokec6 "\uc0\u1069 \u1082 \u1086 \u1085 \u1086 \u1084 \u1100 \u1090 \u1077  \u1074 \u1088 \u1077 \u1084 \u1103  \u1080  \u1076 \u1077 \u1085 \u1100 \u1075 \u1080 , \u1087 \u1086 \u1083 \u1091 \u1095 \u1072 \u1103  \u1080 \u1084 \u1077 \u1085 \u1085 \u1086  \u1090 \u1086 \u1090  \u1072 \u1074 \u1090 \u1086 \u1084 \u1086 \u1073 \u1080 \u1083 \u1100 , \u1082 \u1086 \u1090 \u1086 \u1088 \u1099 \u1081  \u1074 \u1099  \u1093 \u1086 \u1090 \u1080 \u1090 \u1077 , \u1073 \u1083 \u1072 \u1075 \u1086 \u1076 \u1072 \u1088 \u1103  \u1085 \u1072 \u1096 \u1077 \u1084 \u1091  \u1091 \u1084 \u1085 \u1086 \u1084 \u1091  \u1087 \u1086 \u1076 \u1093 \u1086 \u1076 \u1091 ."\strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                     \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "bg-black/20 p-5 rounded-lg text-lg font-bold text-liscar-orange"\strokec7 >\strokec6 "LISCAR: \uc0\u1055 \u1088 \u1086 \u1074 \u1086 \u1088 \u1085 \u1086 \u1089 \u1090 \u1100  \u1083 \u1080 \u1089 \u1099 , \u1085 \u1072 \u1076 \u1077 \u1078 \u1085 \u1086 \u1089 \u1090 \u1100  \u1074  \u1082 \u1072 \u1078 \u1076 \u1086 \u1081  \u1089 \u1076 \u1077 \u1083 \u1082 \u1077 ."\strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                 \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+            \
+            \strokec9 <!-- Section: Strategy -->\strokec6 \
+            \strokec7 <\strokec4 section\strokec6  \strokec5 id\strokec7 =\strokec8 "strategy"\strokec6  \strokec5 class\strokec7 =\strokec8 "content-section"\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 h2\strokec6  \strokec5 class\strokec7 =\strokec8 "text-4xl font-bold text-liscar-orange mb-8 border-b-2 border-liscar-orange/30 pb-4"\strokec7 >\strokec6 \uc0\u1057 \u1090 \u1088 \u1072 \u1090 \u1077 \u1075 \u1080 \u1103  \u1080  \u1050 \u1083 \u1080 \u1077 \u1085 \u1090 \u1089 \u1082 \u1080 \u1081  \u1054 \u1087 \u1099 \u1090 \strokec7 </\strokec4 h2\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "text-lg mb-8 text-liscar-light/90"\strokec7 >\strokec6 \uc0\u1053 \u1072 \u1096 \u1072  \u1089 \u1090 \u1088 \u1072 \u1090 \u1077 \u1075 \u1080 \u1103  \u1089 \u1086 \u1089 \u1088 \u1077 \u1076 \u1086 \u1090 \u1086 \u1095 \u1077 \u1085 \u1072  \u1085 \u1072  \u1089 \u1086 \u1079 \u1076 \u1072 \u1085 \u1080 \u1080  \u1073 \u1077 \u1079 \u1091 \u1087 \u1088 \u1077 \u1095 \u1085 \u1086 \u1075 \u1086  \u1082 \u1083 \u1080 \u1077 \u1085 \u1090 \u1089 \u1082 \u1086 \u1075 \u1086  \u1086 \u1087 \u1099 \u1090 \u1072 . \u1052 \u1099  \u1089 \u1086 \u1087 \u1088 \u1086 \u1074 \u1086 \u1078 \u1076 \u1072 \u1077 \u1084  \u1082 \u1083 \u1080 \u1077 \u1085 \u1090 \u1072  \u1085 \u1072  \u1082 \u1072 \u1078 \u1076 \u1086 \u1084  \u1096 \u1072 \u1075 \u1091 , \u1086 \u1073 \u1077 \u1089 \u1087 \u1077 \u1095 \u1080 \u1074 \u1072 \u1103  \u1082 \u1086 \u1084 \u1092 \u1086 \u1088 \u1090 , \u1091 \u1074 \u1077 \u1088 \u1077 \u1085 \u1085 \u1086 \u1089 \u1090 \u1100  \u1080  \u1087 \u1088 \u1077 \u1076 \u1074 \u1086 \u1089 \u1093 \u1080 \u1097 \u1072 \u1103  \u1077 \u1075 \u1086  \u1086 \u1078 \u1080 \u1076 \u1072 \u1085 \u1080 \u1103 .\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                \
+                \strokec7 <\strokec4 h3\strokec6  \strokec5 class\strokec7 =\strokec8 "text-2xl font-semibold mb-6 text-center"\strokec7 >\strokec6 \uc0\u1055 \u1091 \u1090 \u1100  \u1050 \u1083 \u1080 \u1077 \u1085 \u1090 \u1072  \u1089  LISCAR\strokec7 </\strokec4 h3\strokec7 >\strokec6 \
+                \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "flex flex-col md:flex-row justify-between items-start md:items-center gap-4"\strokec7 >\strokec6 \
+                    \strokec9 <!-- Step 1 -->\strokec6 \
+                    \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "text-center flex-1"\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "bg-liscar-orange text-black rounded-full w-16 h-16 flex items-center justify-center mx-auto text-2xl font-bold mb-2"\strokec7 >\strokec6 1\strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 h4\strokec6  \strokec5 class\strokec7 =\strokec8 "text-xl font-bold mb-2"\strokec7 >\strokec6 \uc0\u1044 \u1086  \u1087 \u1086 \u1082 \u1091 \u1087 \u1082 \u1080 \strokec7 </\strokec4 h4\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "text-liscar-light/80"\strokec7 >\strokec6 \uc0\u1055 \u1088 \u1086 \u1092 \u1077 \u1089 \u1089 \u1080 \u1086 \u1085 \u1072 \u1083 \u1100 \u1085 \u1072 \u1103  \u1082 \u1086 \u1085 \u1089 \u1091 \u1083 \u1100 \u1090 \u1072 \u1094 \u1080 \u1103 , \u1087 \u1088 \u1086 \u1079 \u1088 \u1072 \u1095 \u1085 \u1099 \u1081  \u1088 \u1072 \u1089 \u1095 \u1077 \u1090 , \u1091 \u1076 \u1086 \u1073 \u1085 \u1099 \u1081  \u1087 \u1086 \u1076 \u1073 \u1086 \u1088  \u1072 \u1074 \u1090 \u1086 .\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                    \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "hidden md:block text-liscar-orange text-4xl font-light"\strokec7 >\strokec6 \uc0\u8594 \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                    \strokec9 <!-- Step 2 -->\strokec6 \
+                    \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "text-center flex-1"\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "bg-liscar-orange text-black rounded-full w-16 h-16 flex items-center justify-center mx-auto text-2xl font-bold mb-2"\strokec7 >\strokec6 2\strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 h4\strokec6  \strokec5 class\strokec7 =\strokec8 "text-xl font-bold mb-2"\strokec7 >\strokec6 \uc0\u1055 \u1088 \u1086 \u1094 \u1077 \u1089 \u1089  \u1087 \u1086 \u1082 \u1091 \u1087 \u1082 \u1080 \strokec7 </\strokec4 h4\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "text-liscar-light/80"\strokec7 >\strokec6 \uc0\u1051 \u1080 \u1095 \u1085 \u1099 \u1081  \u1084 \u1077 \u1085 \u1077 \u1076 \u1078 \u1077 \u1088 , \u1088 \u1077 \u1075 \u1091 \u1083 \u1103 \u1088 \u1085 \u1099 \u1077  \u1092 \u1086 \u1090 \u1086 /\u1074 \u1080 \u1076 \u1077 \u1086  \u1086 \u1090 \u1095 \u1077 \u1090 \u1099 , \u1087 \u1086 \u1085 \u1103 \u1090 \u1085 \u1099 \u1081  \u1076 \u1086 \u1082 \u1091 \u1084 \u1077 \u1085 \u1090 \u1086 \u1086 \u1073 \u1086 \u1088 \u1086 \u1090 .\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                    \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "hidden md:block text-liscar-orange text-4xl font-light"\strokec7 >\strokec6 \uc0\u8594 \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                    \strokec9 <!-- Step 3 -->\strokec6 \
+                    \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "text-center flex-1"\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "bg-liscar-orange text-black rounded-full w-16 h-16 flex items-center justify-center mx-auto text-2xl font-bold mb-2"\strokec7 >\strokec6 3\strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 h4\strokec6  \strokec5 class\strokec7 =\strokec8 "text-xl font-bold mb-2"\strokec7 >\strokec6 \uc0\u1055 \u1086 \u1089 \u1083 \u1077  \u1087 \u1086 \u1082 \u1091 \u1087 \u1082 \u1080 \strokec7 </\strokec4 h4\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 p\strokec6  \strokec5 class\strokec7 =\strokec8 "text-liscar-light/80"\strokec7 >\strokec6 \uc0\u1055 \u1086 \u1084 \u1086 \u1097 \u1100  \u1074  \u1087 \u1086 \u1089 \u1090 \u1072 \u1085 \u1086 \u1074 \u1082 \u1077  \u1085 \u1072  \u1091 \u1095 \u1077 \u1090 , \u1087 \u1086 \u1076 \u1076 \u1077 \u1088 \u1078 \u1082 \u1072 , \u1087 \u1088 \u1086 \u1075 \u1088 \u1072 \u1084 \u1084 \u1099  \u1083 \u1086 \u1103 \u1083 \u1100 \u1085 \u1086 \u1089 \u1090 \u1080 .\strokec7 </\strokec4 p\strokec7 >\strokec6 \
+                    \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+\
+                \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 mb-12"\strokec7 >\strokec6 \
+                    \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "bg-black/20 p-6 rounded-xl"\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 h3\strokec6  \strokec5 class\strokec7 =\strokec8 "text-2xl font-semibold mb-4"\strokec7 >\strokec6 \uc0\u1062 \u1080 \u1092 \u1088 \u1086 \u1074 \u1086 \u1077  \u1087 \u1088 \u1080 \u1089 \u1091 \u1090 \u1089 \u1090 \u1074 \u1080 \u1077 \strokec7 </\strokec4 h3\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 ul\strokec6  \strokec5 class\strokec7 =\strokec8 "list-disc list-inside space-y-2"\strokec7 >\strokec6 \
+                           \strokec7 <\strokec4 li\strokec7 ><\strokec4 span\strokec6  \strokec5 class\strokec7 =\strokec8 "font-bold"\strokec7 >\strokec6 \uc0\u1042 \u1077 \u1073 -\u1089 \u1072 \u1081 \u1090 :\strokec7 </\strokec4 span\strokec7 >\strokec6  \uc0\u1048 \u1085 \u1090 \u1091 \u1080 \u1090 \u1080 \u1074 \u1085 \u1099 \u1081 , \u1089  \u1082 \u1072 \u1090 \u1072 \u1083 \u1086 \u1075 \u1086 \u1084  \u1080  \u1082 \u1072 \u1083 \u1100 \u1082 \u1091 \u1083 \u1103 \u1090 \u1086 \u1088 \u1086 \u1084 .\strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                           \strokec7 <\strokec4 li\strokec7 ><\strokec4 span\strokec6  \strokec5 class\strokec7 =\strokec8 "font-bold"\strokec7 >\strokec6 \uc0\u1057 \u1086 \u1094 \u1089 \u1077 \u1090 \u1080 :\strokec7 </\strokec4 span\strokec7 >\strokec6  Instagram, Telegram, YouTube \uc0\u1089  \u1101 \u1082 \u1089 \u1087 \u1077 \u1088 \u1090 \u1085 \u1099 \u1084  \u1080  "\u1079 \u1072 \u1082 \u1091 \u1083 \u1080 \u1089 \u1085 \u1099 \u1084 " \u1082 \u1086 \u1085 \u1090 \u1077 \u1085 \u1090 \u1086 \u1084 .\strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                           \strokec7 <\strokec4 li\strokec7 ><\strokec4 span\strokec6  \strokec5 class\strokec7 =\strokec8 "font-bold"\strokec7 >\strokec6 \uc0\u1056 \u1077 \u1082 \u1083 \u1072 \u1084 \u1072 :\strokec7 </\strokec4 span\strokec7 >\strokec6  \uc0\u1050 \u1086 \u1085 \u1090 \u1077 \u1082 \u1089 \u1090 \u1085 \u1072 \u1103  \u1080  \u1090 \u1072 \u1088 \u1075 \u1077 \u1090 \u1080 \u1088 \u1086 \u1074 \u1072 \u1085 \u1085 \u1072 \u1103 , \u1089  \u1092 \u1086 \u1082 \u1091 \u1089 \u1086 \u1084  \u1085 \u1072  \u1088 \u1077 \u1096 \u1077 \u1085 \u1080 \u1077  "\u1073 \u1086 \u1083 \u1077 \u1081 " \u1082 \u1083 \u1080 \u1077 \u1085 \u1090 \u1072 .\strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                        \strokec7 </\strokec4 ul\strokec7 >\strokec6 \
+                    \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                     \strokec7 <\strokec4 div\strokec6  \strokec5 class\strokec7 =\strokec8 "bg-black/20 p-6 rounded-xl"\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 h3\strokec6  \strokec5 class\strokec7 =\strokec8 "text-2xl font-semibold mb-4"\strokec7 >\strokec6 \uc0\u1056 \u1086 \u1089 \u1090  \u1080  \u1048 \u1085 \u1085 \u1086 \u1074 \u1072 \u1094 \u1080 \u1080 \strokec7 </\strokec4 h3\strokec7 >\strokec6 \
+                        \strokec7 <\strokec4 ul\strokec6  \strokec5 class\strokec7 =\strokec8 "list-disc list-inside space-y-2"\strokec7 >\strokec6 \
+                           \strokec7 <\strokec4 li\strokec7 ><\strokec4 span\strokec6  \strokec5 class\strokec7 =\strokec8 "font-bold"\strokec7 >\strokec6 \uc0\u1056 \u1072 \u1089 \u1096 \u1080 \u1088 \u1077 \u1085 \u1080 \u1077  \u1091 \u1089 \u1083 \u1091 \u1075 :\strokec7 </\strokec4 span\strokec7 >\strokec6  \uc0\u1058 \u1102 \u1085 \u1080 \u1085 \u1075 , \u1087 \u1086 \u1089 \u1090 \u1087 \u1088 \u1086 \u1076 \u1072 \u1078 \u1085 \u1099 \u1081  \u1089 \u1077 \u1088 \u1074 \u1080 \u1089 , \u1092 \u1080 \u1085 \u1072 \u1085 \u1089 \u1086 \u1074 \u1099 \u1077  \u1087 \u1088 \u1086 \u1076 \u1091 \u1082 \u1090 \u1099 .\strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                           \strokec7 <\strokec4 li\strokec7 ><\strokec4 span\strokec6  \strokec5 class\strokec7 =\strokec8 "font-bold"\strokec7 >\strokec6 \uc0\u1058 \u1077 \u1093 \u1085 \u1086 \u1083 \u1086 \u1075 \u1080 \u1080 :\strokec7 </\strokec4 span\strokec7 >\strokec6  \uc0\u1042 \u1085 \u1077 \u1076 \u1088 \u1077 \u1085 \u1080 \u1077  AI \u1076 \u1083 \u1103  \u1072 \u1085 \u1072 \u1083 \u1080 \u1079 \u1072  \u1088 \u1099 \u1085 \u1082 \u1072  \u1080  \u1088 \u1072 \u1079 \u1088 \u1072 \u1073 \u1086 \u1090 \u1082 \u1072  \u1084 \u1086 \u1073 \u1080 \u1083 \u1100 \u1085 \u1086 \u1075 \u1086  \u1087 \u1088 \u1080 \u1083 \u1086 \u1078 \u1077 \u1085 \u1080 \u1103 .\strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                           \strokec7 <\strokec4 li\strokec7 ><\strokec4 span\strokec6  \strokec5 class\strokec7 =\strokec8 "font-bold"\strokec7 >\strokec6 \uc0\u1052 \u1086 \u1085 \u1080 \u1090 \u1086 \u1088 \u1080 \u1085 \u1075 :\strokec7 </\strokec4 span\strokec7 >\strokec6  \uc0\u1055 \u1086 \u1089 \u1090 \u1086 \u1103 \u1085 \u1085 \u1099 \u1081  \u1072 \u1085 \u1072 \u1083 \u1080 \u1079  \u1088 \u1099 \u1085 \u1082 \u1072 , \u1079 \u1072 \u1082 \u1086 \u1085 \u1086 \u1076 \u1072 \u1090 \u1077 \u1083 \u1100 \u1089 \u1090 \u1074 \u1072  \u1080  \u1090 \u1088 \u1077 \u1085 \u1076 \u1086 \u1074 .\strokec7 </\strokec4 li\strokec7 >\strokec6 \
+                        \strokec7 </\strokec4 ul\strokec7 >\strokec6 \
+                    \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+                \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+            \strokec7 </\strokec4 section\strokec7 >\strokec6 \
+        \strokec7 </\strokec4 main\strokec7 >\strokec6 \
+    \strokec7 </\strokec4 div\strokec7 >\strokec6 \
+\
+    \strokec7 <\strokec4 script\strokec7 >\strokec6 \
+        document\strokec10 .\strokec6 addEventListener\strokec10 (\strokec11 'DOMContentLoaded'\strokec10 ,\strokec6  \strokec13 function\strokec6  \strokec10 ()\strokec6  \strokec10 \{\strokec6 \
+            \strokec13 const\strokec6  navLinks \strokec10 =\strokec6  document\strokec10 .\strokec6 querySelectorAll\strokec10 (\strokec11 '.nav-link'\strokec10 );\strokec6 \
+            \strokec13 const\strokec6  contentSections \strokec10 =\strokec6  document\strokec10 .\strokec6 querySelectorAll\strokec10 (\strokec11 '.content-section'\strokec10 );\strokec6 \
+\
+            \strokec9 // Navigation handler\strokec6 \
+            document\strokec10 .\strokec6 getElementById\strokec10 (\strokec11 'main-nav'\strokec10 ).\strokec6 addEventListener\strokec10 (\strokec11 'click'\strokec10 ,\strokec6  \strokec13 function\strokec10 (\strokec6 e\strokec10 )\strokec6  \strokec10 \{\strokec6 \
+                \strokec13 if\strokec6  \strokec10 (\strokec6 e\strokec10 .\strokec6 target\strokec10 .\strokec6 tagName \strokec10 ===\strokec6  \strokec11 'A'\strokec10 )\strokec6  \strokec10 \{\strokec6 \
+                    e\strokec10 .\strokec6 preventDefault\strokec10 ();\strokec6 \
+                    \strokec13 const\strokec6  targetId \strokec10 =\strokec6  e\strokec10 .\strokec6 target\strokec10 .\strokec6 getAttribute\strokec10 (\strokec11 'href'\strokec10 );\strokec6 \
+\
+                    navLinks\strokec10 .\strokec6 forEach\strokec10 (\strokec6 link \strokec10 =>\strokec6  \strokec10 \{\strokec6 \
+                        link\strokec10 .\strokec6 classList\strokec10 .\strokec6 remove\strokec10 (\strokec11 'active'\strokec10 );\strokec6 \
+                        \strokec13 if\strokec6  \strokec10 (\strokec6 link\strokec10 .\strokec6 getAttribute\strokec10 (\strokec11 'href'\strokec10 )\strokec6  \strokec10 ===\strokec6  targetId\strokec10 )\strokec6  \strokec10 \{\strokec6 \
+                            link\strokec10 .\strokec6 classList\strokec10 .\strokec6 add\strokec10 (\strokec11 'active'\strokec10 );\strokec6 \
+                        \strokec10 \}\strokec6 \
+                    \strokec10 \});\strokec6 \
+\
+                    contentSections\strokec10 .\strokec6 forEach\strokec10 (\strokec6 section \strokec10 =>\strokec6  \strokec10 \{\strokec6 \
+                        section\strokec10 .\strokec6 classList\strokec10 .\strokec6 remove\strokec10 (\strokec11 'active'\strokec10 );\strokec6 \
+                        \strokec13 if\strokec6  \strokec10 (\strokec11 '#'\strokec6  \strokec10 +\strokec6  section\strokec10 .\strokec6 id \strokec10 ===\strokec6  targetId\strokec10 )\strokec6  \strokec10 \{\strokec6 \
+                            section\strokec10 .\strokec6 classList\strokec10 .\strokec6 add\strokec10 (\strokec11 'active'\strokec10 );\strokec6 \
+                        \strokec10 \}\strokec6 \
+                    \strokec10 \});\strokec6 \
+                     window\strokec10 .\strokec6 scrollTo\strokec10 (\strokec14 0\strokec10 ,\strokec6  \strokec14 0\strokec10 );\strokec6 \
+                \strokec10 \}\strokec6 \
+            \strokec10 \});\strokec6 \
+            \
+            \strokec9 // Color copy handler\strokec6 \
+            \strokec13 const\strokec6  colorSwatches \strokec10 =\strokec6  document\strokec10 .\strokec6 querySelectorAll\strokec10 (\strokec11 '[data-color]'\strokec10 );\strokec6 \
+            \strokec13 const\strokec6  copyMessage \strokec10 =\strokec6  document\strokec10 .\strokec6 getElementById\strokec10 (\strokec11 'copy-message'\strokec10 );\strokec6 \
+            colorSwatches\strokec10 .\strokec6 forEach\strokec10 (\strokec6 swatch \strokec10 =>\strokec6  \strokec10 \{\strokec6 \
+                swatch\strokec10 .\strokec6 addEventListener\strokec10 (\strokec11 'click'\strokec10 ,\strokec6  \strokec10 ()\strokec6  \strokec10 =>\strokec6  \strokec10 \{\strokec6 \
+                    \strokec13 const\strokec6  color \strokec10 =\strokec6  swatch\strokec10 .\strokec6 dataset\strokec10 .\strokec6 color\strokec10 ;\strokec6 \
+                    navigator\strokec10 .\strokec6 clipboard\strokec10 .\strokec6 writeText\strokec10 (\strokec6 color\strokec10 ).\strokec6 then\strokec10 (()\strokec6  \strokec10 =>\strokec6  \strokec10 \{\strokec6 \
+                        copyMessage\strokec10 .\strokec6 style\strokec10 .\strokec6 opacity \strokec10 =\strokec6  \strokec11 '1'\strokec10 ;\strokec6 \
+                        setTimeout\strokec10 (()\strokec6  \strokec10 =>\strokec6  \strokec10 \{\strokec6 \
+                           copyMessage\strokec10 .\strokec6 style\strokec10 .\strokec6 opacity \strokec10 =\strokec6  \strokec11 '0'\strokec10 ;\strokec6 \
+                        \strokec10 \},\strokec6  \strokec14 1500\strokec10 );\strokec6 \
+                    \strokec10 \}).\strokec13 catch\strokec10 (\strokec6 err \strokec10 =>\strokec6  \strokec10 \{\strokec6 \
+                        console\strokec10 .\strokec6 error\strokec10 (\strokec11 'Could not copy text: '\strokec10 ,\strokec6  err\strokec10 );\strokec6 \
+                    \strokec10 \});\strokec6 \
+                \strokec10 \});\strokec6 \
+            \strokec10 \});\strokec6 \
+\
+            \strokec9 // Chart.js configurations\strokec6 \
+            \strokec13 const\strokec6  chartFontColor \strokec10 =\strokec6  \strokec11 '#F0EAD6'\strokec10 ;\strokec6 \
+            \strokec13 const\strokec6  gridColor \strokec10 =\strokec6  \strokec11 'rgba(240, 234, 214, 0.2)'\strokec10 ;\strokec6 \
+\
+            \strokec9 // Audience Chart\strokec6 \
+            \strokec13 const\strokec6  audienceCtx \strokec10 =\strokec6  document\strokec10 .\strokec6 getElementById\strokec10 (\strokec11 'audienceChart'\strokec10 );\strokec6 \
+            \strokec13 if\strokec10 (\strokec6 audienceCtx\strokec10 )\strokec6  \strokec10 \{\strokec6 \
+                \strokec13 new\strokec6  \strokec15 Chart\strokec10 (\strokec6 audienceCtx\strokec10 ,\strokec6  \strokec10 \{\strokec6 \
+                    type\strokec10 :\strokec6  \strokec11 'doughnut'\strokec10 ,\strokec6 \
+                    data\strokec10 :\strokec6  \strokec10 \{\strokec6 \
+                        labels\strokec10 :\strokec6  \strokec10 [\strokec11 '\uc0\u1062 \u1077 \u1085 \u1072 /\u1050 \u1072 \u1095 \u1077 \u1089 \u1090 \u1074 \u1086 '\strokec10 ,\strokec6  \strokec11 '\uc0\u1069 \u1082 \u1089 \u1082 \u1083 \u1102 \u1079 \u1080 \u1074 \u1085 \u1086 \u1089 \u1090 \u1100 '\strokec10 ,\strokec6  \strokec11 '\uc0\u1069 \u1082 \u1086 \u1085 \u1086 \u1084 \u1080 \u1103  \u1074 \u1088 \u1077 \u1084 \u1077 \u1085 \u1080 '\strokec10 ,\strokec6  \strokec11 '\uc0\u1057 \u1090 \u1072 \u1090 \u1091 \u1089 '\strokec10 ],\strokec6 \
+                        datasets\strokec10 :\strokec6  \strokec10 [\{\strokec6 \
+                            label\strokec10 :\strokec6  \strokec11 '\uc0\u1052 \u1086 \u1090 \u1080 \u1074 \u1072 \u1094 \u1080 \u1103 '\strokec10 ,\strokec6 \
+                            data\strokec10 :\strokec6  \strokec10 [\strokec14 40\strokec10 ,\strokec6  \strokec14 30\strokec10 ,\strokec6  \strokec14 20\strokec10 ,\strokec6  \strokec14 10\strokec10 ],\strokec6 \
+                            backgroundColor\strokec10 :\strokec6  \strokec10 [\strokec6 \
+                                \strokec11 'rgba(255, 102, 0, 0.8)'\strokec10 ,\strokec6 \
+                                \strokec11 'rgba(204, 204, 204, 0.8)'\strokec10 ,\strokec6 \
+                                \strokec11 'rgba(255, 102, 0, 0.5)'\strokec10 ,\strokec6 \
+                                \strokec11 'rgba(204, 204, 204, 0.5)'\strokec6 \
+                            \strokec10 ],\strokec6 \
+                            borderColor\strokec10 :\strokec6  \strokec11 '#1A1A1A'\strokec10 ,\strokec6 \
+                            borderWidth\strokec10 :\strokec6  \strokec14 2\strokec6 \
+                        \strokec10 \}]\strokec6 \
+                    \strokec10 \},\strokec6 \
+                    options\strokec10 :\strokec6  \strokec10 \{\strokec6 \
+                        responsive\strokec10 :\strokec6  \strokec13 true\strokec10 ,\strokec6 \
+                        maintainAspectRatio\strokec10 :\strokec6  \strokec13 false\strokec10 ,\strokec6 \
+                        plugins\strokec10 :\strokec6  \strokec10 \{\strokec6 \
+                            legend\strokec10 :\strokec6  \strokec10 \{\strokec6 \
+                                position\strokec10 :\strokec6  \strokec11 'top'\strokec10 ,\strokec6 \
+                                labels\strokec10 :\strokec6  \strokec10 \{\strokec6 \
+                                    color\strokec10 :\strokec6  chartFontColor\strokec10 ,\strokec6 \
+                                    font\strokec10 :\strokec6  \strokec10 \{\strokec6 \
+                                        size\strokec10 :\strokec6  \strokec14 14\strokec10 ,\strokec6 \
+                                        family\strokec10 :\strokec6  \strokec11 "'Open Sans', sans-serif"\strokec6 \
+                                    \strokec10 \}\strokec6 \
+                                \strokec10 \}\strokec6 \
+                            \strokec10 \}\strokec6 \
+                        \strokec10 \}\strokec6 \
+                    \strokec10 \}\strokec6 \
+                \strokec10 \});\strokec6 \
+            \strokec10 \}\strokec6 \
+           \
+            \strokec9 // Positioning Chart\strokec6 \
+            \strokec13 const\strokec6  positioningCtx \strokec10 =\strokec6  document\strokec10 .\strokec6 getElementById\strokec10 (\strokec11 'positioningChart'\strokec10 );\strokec6 \
+            \strokec13 if\strokec10 (\strokec6 positioningCtx\strokec10 )\strokec6  \strokec10 \{\strokec6 \
+                \strokec13 new\strokec6  \strokec15 Chart\strokec10 (\strokec6 positioningCtx\strokec10 ,\strokec6  \strokec10 \{\strokec6 \
+                    type\strokec10 :\strokec6  \strokec11 'bar'\strokec10 ,\strokec6 \
+                    data\strokec10 :\strokec6  \strokec10 \{\strokec6 \
+                        labels\strokec10 :\strokec6  \strokec10 [\strokec11 '\uc0\u1055 \u1088 \u1086 \u1079 \u1088 \u1072 \u1095 \u1085 \u1086 \u1089 \u1090 \u1100 '\strokec10 ,\strokec6  \strokec11 '\uc0\u1057 \u1077 \u1088 \u1074 \u1080 \u1089  "\u1087 \u1086 \u1076  \u1082 \u1083 \u1102 \u1095 "'\strokec10 ,\strokec6  \strokec11 '\uc0\u1043 \u1072 \u1088 \u1072 \u1085 \u1090 \u1080 \u1080 '\strokec10 ,\strokec6  \strokec11 '\uc0\u1043 \u1080 \u1073 \u1082 \u1086 \u1089 \u1090 \u1100  \u1088 \u1077 \u1096 \u1077 \u1085 \u1080 \u1081 '\strokec10 ],\strokec6 \
+                        datasets\strokec10 :\strokec6  \strokec10 [\{\strokec6 \
+                            label\strokec10 :\strokec6  \strokec11 'LISCAR'\strokec10 ,\strokec6 \
+                            data\strokec10 :\strokec6  \strokec10 [\strokec14 95\strokec10 ,\strokec6  \strokec14 90\strokec10 ,\strokec6  \strokec14 98\strokec10 ,\strokec6  \strokec14 92\strokec10 ],\strokec6 \
+                            backgroundColor\strokec10 :\strokec6  \strokec11 'rgba(255, 102, 0, 0.8)'\strokec10 ,\strokec6 \
+                            borderColor\strokec10 :\strokec6  \strokec11 'rgba(255, 102, 0, 1)'\strokec10 ,\strokec6 \
+                            borderWidth\strokec10 :\strokec6  \strokec14 1\strokec6 \
+                        \strokec10 \},\strokec6  \strokec10 \{\strokec6 \
+                            label\strokec10 :\strokec6  \strokec11 '\uc0\u1063 \u1072 \u1089 \u1090 \u1085 \u1099 \u1077  \u1087 \u1077 \u1088 \u1077 \u1075 \u1086 \u1085 \u1097 \u1080 \u1082 \u1080 '\strokec10 ,\strokec6 \
+                            data\strokec10 :\strokec6  \strokec10 [\strokec14 30\strokec10 ,\strokec6  \strokec14 20\strokec10 ,\strokec6  \strokec14 25\strokec10 ,\strokec6  \strokec14 50\strokec10 ],\strokec6 \
+                            backgroundColor\strokec10 :\strokec6  \strokec11 'rgba(204, 204, 204, 0.6)'\strokec10 ,\strokec6 \
+                            borderColor\strokec10 :\strokec6  \strokec11 'rgba(204, 204, 204, 1)'\strokec10 ,\strokec6 \
+                            borderWidth\strokec10 :\strokec6  \strokec14 1\strokec6 \
+                        \strokec10 \}]\strokec6 \
+                    \strokec10 \},\strokec6 \
+                    options\strokec10 :\strokec6  \strokec10 \{\strokec6 \
+                       responsive\strokec10 :\strokec6  \strokec13 true\strokec10 ,\strokec6 \
+                       maintainAspectRatio\strokec10 :\strokec6  \strokec13 false\strokec10 ,\strokec6 \
+                        scales\strokec10 :\strokec6  \strokec10 \{\strokec6 \
+                            y\strokec10 :\strokec6  \strokec10 \{\strokec6 \
+                                beginAtZero\strokec10 :\strokec6  \strokec13 true\strokec10 ,\strokec6 \
+                                grid\strokec10 :\strokec6  \strokec10 \{\strokec6  color\strokec10 :\strokec6  gridColor \strokec10 \},\strokec6 \
+                                ticks\strokec10 :\strokec6  \strokec10 \{\strokec6  \
+                                    color\strokec10 :\strokec6  chartFontColor\strokec10 ,\strokec6 \
+                                    font\strokec10 :\strokec6  \strokec10 \{\strokec6  size\strokec10 :\strokec6  \strokec14 12\strokec6  \strokec10 \}\strokec6 \
+                                 \strokec10 \}\strokec6 \
+                            \strokec10 \},\strokec6 \
+                            x\strokec10 :\strokec6  \strokec10 \{\strokec6 \
+                                grid\strokec10 :\strokec6  \strokec10 \{\strokec6  color\strokec10 :\strokec6  \strokec11 'transparent'\strokec6  \strokec10 \},\strokec6 \
+                                ticks\strokec10 :\strokec6  \strokec10 \{\strokec6  \
+                                    color\strokec10 :\strokec6  chartFontColor\strokec10 ,\strokec6 \
+                                    font\strokec10 :\strokec6  \strokec10 \{\strokec6  size\strokec10 :\strokec6  \strokec14 12\strokec6  \strokec10 \}\strokec6 \
+                                \strokec10 \}\strokec6 \
+                            \strokec10 \}\strokec6 \
+                        \strokec10 \},\strokec6 \
+                        plugins\strokec10 :\strokec6  \strokec10 \{\strokec6 \
+                            legend\strokec10 :\strokec6  \strokec10 \{\strokec6 \
+                                labels\strokec10 :\strokec6  \strokec10 \{\strokec6 \
+                                    color\strokec10 :\strokec6  chartFontColor\strokec10 ,\strokec6 \
+                                    font\strokec10 :\strokec6  \strokec10 \{\strokec6 \
+                                        size\strokec10 :\strokec6  \strokec14 14\strokec6 \
+                                    \strokec10 \}\strokec6 \
+                                \strokec10 \}\strokec6 \
+                            \strokec10 \}\strokec6 \
+                        \strokec10 \}\strokec6 \
+                    \strokec10 \}\strokec6 \
+                \strokec10 \});\strokec6 \
+            \strokec10 \}\strokec6 \
+        \strokec10 \});\strokec6 \
+    \strokec7 </\strokec4 script\strokec7 >\strokec6 \
+\strokec7 </\strokec4 body\strokec7 >\strokec6 \
+\strokec7 </\strokec4 html\strokec7 >\strokec6 \
+\
+}
